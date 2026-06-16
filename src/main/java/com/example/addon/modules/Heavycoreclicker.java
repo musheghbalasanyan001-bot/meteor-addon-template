@@ -1,10 +1,8 @@
 package com.example.addon.modules;
 
-import net.meteorclient.api.addons.MeteorAddon;
-import net.meteorclient.api.systems.modules.Modules;
+import com.example.addon.AddonTemplate;
 import net.meteorclient.api.systems.modules.Module;
 import net.meteorclient.api.events.world.TickEvent;
-import net.meteorclient.api.systems.modules.Categories;
 import net.meteorclient.api.settings.*;
 import meteordevelopment.orbit.EventHandler;
 import net.minecraft.block.Blocks;
@@ -31,7 +29,7 @@ public class Heavycoreclicker extends Module {
     );
 
     public Heavycoreclicker() {
-        super(Categories.Combat, "trial-clicker", "Automatically clicks Heavy Core based on Wind Burst level.");
+        super(AddonTemplate.CATEGORY, "trial-clicker", "Automatically clicks Heavy Core based on Wind Burst level.");
     }
 
     @EventHandler
